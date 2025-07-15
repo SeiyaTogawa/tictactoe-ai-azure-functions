@@ -14,10 +14,22 @@
 ## プロジェクト構造
 
 ```
-src/ttt-api/
-├── function_app.py    # Azure Functions のエントリーポイント
-├── inference.py       # 三目並べの AI ロジック
-└── mc_tictactoe.pkl   # 訓練済みの Q-table
+ttt_api/
+├── src/
+│   ├── ttt-api/
+│   │   ├── function_app.py      # Azure Functions のエントリーポイント
+│   │   ├── inference.py         # 三目並べの AI ロジック
+│   │   └── train_result/        # 訓練結果の保存先
+│   │       └── mc_tictactoe.pkl # 訓練済みの Q-table
+│   └── training/                # 訓練スクリプト
+│       ├── rl_tictactoe.py      # 強化学習のコア実装
+│       └── train_and_save.py    # 訓練とモデル保存スクリプト
+├── models/                      # 事前訓練済みモデル
+│   └── mc_tictactoe.pkl        # 本番用モデル
+├── data/                        # 訓練データ
+│   └── game_logs/              # ゲームログ
+├── notebooks/                   # Jupyter ノートブック
+└── scripts/                     # ユーティリティスクリプト
 ```
 
 ## API エンドポイント
