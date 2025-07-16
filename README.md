@@ -11,6 +11,8 @@ https://github.com/user-attachments/assets/6ace659d-75f6-4834-8cad-76e9214b02f4
 ## 概要
 
 ### システム構成
+<img width="822" height="420" alt="image" src="https://github.com/user-attachments/assets/5a19e4b1-73bc-4373-8364-bd9ff9f83949" />
+
 - **バックエンド**: Azure Functions で実装された○×ゲームAI
 - **フロントエンド**: Copilot Studio で構築されたインタラクティブチャットボット
 - **AI学習方式**: モンテカルロ法による強化学習
