@@ -1,10 +1,16 @@
 # 〇×ゲーム強化学習エージェント by Copilot Studio
 
-このプロジェクトは、強化学習で訓練された AI を使用した○×ゲームの Azure Functions API です。
+このプロジェクトは、強化学習で訓練された AI を使用した○×ゲームのアプリケーションです。バックエンドは Azure Functions で実装され、フロントエンドには Microsoft Copilot Studio を使用したチャットインターフェースを採用しています。
 
 ## 概要
 
-- **ユーザー**: ○（先手）
+### システム構成
+- **バックエンド**: Azure Functions で実装された○×ゲームAI
+- **フロントエンド**: Copilot Studio で構築されたインタラクティブチャットボット
+- **AI学習方式**: モンテカルロ法による強化学習
+
+### ゲームの仕組み
+- **ユーザー**: ○（先手）- チャットインターフェースから操作
 - **AI**: ×（後手）
 - **AI の戦略**: 
   1. 勝てる手があれば勝つ
@@ -28,6 +34,9 @@ ttt_api/
 │   └── mc_tictactoe.pkl        # 本番用モデル
 ├── data/                        # 訓練データ
 │   └── game_logs/              # ゲームログ
+├── copilot_studio/             # Copilot Studio ソリューション
+│   ├── solutions/              # Power Platform ソリューション ZIP
+│   └── videos/                 # チャットUI画面キャプチャ
 ├── notebooks/                   # Jupyter ノートブック
 └── scripts/                     # ユーティリティスクリプト
 ```
@@ -99,6 +108,7 @@ func azure functionapp publish <your-function-app-name>
 
 ## 使用例
 
+### API直接呼び出し
 ```bash
 curl -X POST https://your-function-app.azurewebsites.net/api/playturn \
   -H "Content-Type: application/json" \
@@ -107,6 +117,15 @@ curl -X POST https://your-function-app.azurewebsites.net/api/playturn \
     "move": 4
   }'
 ```
+
+### Copilot Studio チャットボット
+
+![〇×ゲームチャットUI](copilot_studio/screenshots/tictactoe_chat.png)
+
+1. Copilot Studioボットとのチャットで「〇×ゲームをプレイしたい」と入力
+2. チャットインターフェースで盤面が表示され、ゲーム開始
+3. 数字（0-8）を入力して手を打つ
+4. AIが応答して次の盤面が表示される
 
 ## 技術詳細
 
