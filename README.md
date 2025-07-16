@@ -1,6 +1,6 @@
 # 〇×ゲーム強化学習エージェント by Copilot Studio
 
-このプロジェクトは、強化学習で訓練された AI を使用した三目並べ（○×ゲーム）の Azure Functions API です。
+このプロジェクトは、強化学習で訓練された AI を使用した○×ゲームの Azure Functions API です。
 
 ## 概要
 
