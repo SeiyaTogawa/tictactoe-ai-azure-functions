@@ -2,6 +2,12 @@
 
 このプロジェクトは、強化学習で訓練された AI を使用した○×ゲームのアプリケーションです。バックエンドは Azure Functions で実装され、フロントエンドには Microsoft Copilot Studio を使用したチャットインターフェースを採用しています。
 
+
+
+https://github.com/user-attachments/assets/6ace659d-75f6-4834-8cad-76e9214b02f4
+
+
+
 ## 概要
 
 ### システム構成
