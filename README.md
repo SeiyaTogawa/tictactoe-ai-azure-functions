@@ -1,10 +1,18 @@
-# 〇×ゲーム強化学習エージェント by Copilot Studio
+# 〇×ゲーム強化学習エージェント with Copilot Studio
 
 このプロジェクトは、強化学習で訓練された AI を使用した○×ゲームのアプリケーションです。バックエンドは Azure Functions で実装され、フロントエンドには Microsoft Copilot Studio を使用したチャットインターフェースを採用しています。
+
+
+
+https://github.com/user-attachments/assets/6ace659d-75f6-4834-8cad-76e9214b02f4
+
+
 
 ## 概要
 
 ### システム構成
+<img width="822" height="420" alt="image" src="https://github.com/user-attachments/assets/5a19e4b1-73bc-4373-8364-bd9ff9f83949" />
+
 - **バックエンド**: Azure Functions で実装された○×ゲームAI
 - **フロントエンド**: Copilot Studio で構築されたインタラクティブチャットボット
 - **AI学習方式**: モンテカルロ法による強化学習
@@ -119,8 +127,6 @@ curl -X POST https://your-function-app.azurewebsites.net/api/playturn \
 ```
 
 ### Copilot Studio チャットボット
-
-![〇×ゲームチャットUI](copilot_studio/screenshots/tictactoe_chat.png)
 
 1. Copilot Studioボットとのチャットで「〇×ゲームをプレイしたい」と入力
 2. チャットインターフェースで盤面が表示され、ゲーム開始
