@@ -1,4 +1,4 @@
-# 三目並べ強化学習 API - Azure Functions
+# 〇×ゲーム強化学習エージェント by Copilot Studio
 
 このプロジェクトは、強化学習で訓練された AI を使用した三目並べ（○×ゲーム）の Azure Functions API です。
 
@@ -18,7 +18,7 @@ ttt_api/
 ├── src/
 │   ├── ttt-api/
 │   │   ├── function_app.py      # Azure Functions のエントリーポイント
-│   │   ├── inference.py         # 三目並べの AI ロジック
+│   │   ├── inference.py         # 〇×ゲームの AI ロジック
 │   │   └── train_result/        # 訓練結果の保存先
 │   │       └── mc_tictactoe.pkl # 訓練済みの Q-table
 │   └── training/                # 訓練スクリプト
