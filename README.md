@@ -1,4 +1,4 @@
-# 〇×ゲーム強化学習エージェント by Copilot Studio
+# 〇×ゲーム強化学習エージェント with Copilot Studio
 
 このプロジェクトは、強化学習で訓練された AI を使用した○×ゲームのアプリケーションです。バックエンドは Azure Functions で実装され、フロントエンドには Microsoft Copilot Studio を使用したチャットインターフェースを採用しています。
 
