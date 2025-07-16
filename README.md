@@ -128,8 +128,6 @@ curl -X POST https://your-function-app.azurewebsites.net/api/playturn \
 
 ### Copilot Studio チャットボット
 
-![〇×ゲームチャットUI](copilot_studio/screenshots/tictactoe_chat.png)
-
 1. Copilot Studioボットとのチャットで「〇×ゲームをプレイしたい」と入力
 2. チャットインターフェースで盤面が表示され、ゲーム開始
 3. 数字（0-8）を入力して手を打つ
